@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Fadesa Community</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon da barra do navegador  -->
+    <link rel="shortcut icon" href="Imagens/fadesaicon.gif" type="image/x-icon" />
+    <!-- Link da FONTE PRINCIPAL do SITE By GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- CSS do CARROSEL DE CURSOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   <!-- Link do Site dos icons + script dos icons para poder funcionar  corretamente-->
+    <script src="https://kit.fontawesome.com/79dfdaaf5e.js" crossorigin="anonymous"></script>
+    <!-- Link do CSS da Pagina -->
+    <link rel="stylesheet" href="CSS/Crossbrowser.css">
+    <link rel="stylesheet" href="CSS/TL-Home.css">
+
+</head>
+<body>
+    <!-- Escript do carrosel de cursos -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+             $('.carousel').carousel({
+                shift: 30,  
+                onCycleTo: null ,
+             });      
+        });
+    </script>
+<!-- Final do script -->
+
+<!-- HTML da barra principal e do carrosel de curos -->
+    <header class="barra-primaria">
+        <!-- Imagem da barra principal Fadesa Community pequena -->
+            <img src="Imagens/fds-community.png" id="fds-community">
+            <!-- Itens da lista da barra principal -->
+            <ol>
+                <li id="opt"><a href="#" id="opt">inicio</a></li>
+                <li id="opt"><a href="#" id="opt">login</a></li>
+                <li id="opt"><a href="#" id="opt">eventos</a></li>
+            </ol>
+            <!-- HTML do Carrosel de itens e a images de cada curso -->
+            <div class="carousel">
+                <a class="carousel-item" href="#1"><img src="Imagens/nutrição.png"></a>
+                <a class="carousel-item" href="#2"><img src="Imagens/pedagogia.png"></a>
+                <a class="carousel-item" href="#3"><img src="Imagens/psicologia.png"></a>
+                <a class="carousel-item" href="#4"><img src="Imagens/administração.png"></a>
+                <a class="carousel-item" href="#5"><img src="Imagens/ads.png"></a>
+                <a class="carousel-item" href="#6"><img src="Imagens/enfermagem.png"></a>
+                <a class="carousel-item" href="#7"><img src="Imagens/direito.png"></a>
+                <a class="carousel-item" href="#8"><img src="Imagens/contabilidade.png"></a>
+                <a class="carousel-item" href="#9"><img src="Imagens/edfisica.png"></a>
+            </div>
+            <!-- HTML das redes socias da barra principal -->
+            <div class="socialmenu">
+                <ul>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+            <!-- HTML da barra de Busca + a Lupa -->
+            <div class="busca">
+                <input type="search">
+                <i class="fas fa-search"></i>
+            </div>      
+
+            <div class="hackerr">
+                <img src="Imagens/propaganda.jpeg" width="1348px">
+            </div>
+    </header>
+    <!-- Fim da barra principal -->
+    <!-- HTML DA PROPAGANDA -->
+    <div id="boxenorme">
+        <slider>
+            <slide></slide>
+            <slide></slide>
+            <slide></slide>
+            <slide></slide>
+            </slider>
+        </div>
+</body>
+</html>

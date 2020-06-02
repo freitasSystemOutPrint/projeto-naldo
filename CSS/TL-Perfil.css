@@ -1,0 +1,354 @@
+body 
+{       
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a;  
+}
+     
+/*FORMATAÇÃO DA BARRA PRINCIPAL*/
+.barra-primaria
+{
+    width: 100%;
+    height: 80px;
+    background-color: #1a1a1a; 
+    position: absolute;
+    top: 0px; 
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.barra-primaria ol
+{
+    position: relative;
+    list-style: none;
+    /* margin-left: 495px; */
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 400px;
+}
+
+.barra-primaria ol li 
+{
+    float: left;
+    width: 110px;
+    box-sizing: border-box;
+    margin-left:5px ;
+    padding: 30px;
+
+}
+
+.barra-primaria #opt a 
+{
+    color: #0984e3;
+    text-align: center;
+    text-transform:uppercase;  
+    display: block;
+}
+
+.barra-primaria #opt a:hover 
+{
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+/* FIM DO CSS DOS NOMES DA BARRA PRINCIPAL */
+
+/* CSS DA LOGO DA FADESA COMMUNITY DA BARRA PRINCIPAL (IMAGEM PEQUENA) */
+#fds-community 
+{
+    position: absolute;
+    height: 60px;
+    width: 200px;
+    top:10px;
+    left: 2%;
+}
+
+/* CSS DAS REDES SOCIAS DA BARRA PRINCIPAL */
+
+.socialmenu ul  
+{
+    position: absolute;
+    top:45%;
+    left:89%;
+    padding:0;
+    margin:0;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.socialmenu ul li
+{
+    list-style: none;
+    margin: 0 4px;
+}
+
+.socialmenu ul li .fa
+{
+    font-size: 25px;
+    line-height: 39px;
+    transition: .6s;
+    color: white; 
+}
+
+.socialmenu ul li .fa:hover
+{
+    color: #fff;
+}
+
+.socialmenu ul li a 
+{
+    position: relative;
+    display: block;
+    width:38px;
+    height:38px;
+    background-color: #1E90FF;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+ 
+.socialmenu ul li a:hover
+{
+    transform: translate(0, -10px);
+}
+
+.socialmenu ul li:nth-child(1) a:hover
+{
+    background-color: #3b5999;
+}
+.socialmenu ul li:nth-child(2) a:hover
+{
+    background-color: #e4405f;
+}
+.socialmenu ul li:nth-child(3) a:hover
+{
+    background-color: #25D366;
+}
+/* FIM DO CSS DOS MENUS DA BARRA PRINCIPAL */
+
+/* CSS da DIV BUSCA e Do ESTILO  DA LUPA */
+.busca 
+{
+    position: absolute;
+    top: 39%;
+    left: 64%;
+    height: 50px;
+    width:250px;
+}
+/* CSS DO CAMPO DE BUSCA */
+ .busca input[type="search"]
+{
+    height: 30px;
+    border: none;
+    outline: none;
+    padding-left: 50px;
+    width: 0px;
+    position: absolute;
+    top: -8px;
+    left: 0px;
+    z-index: 3;
+    background: none;
+    transition: width 1s ease-in-out;
+    cursor: pointer;
+}
+/* CSS QUANDO CLICA NO ICON DA LUPA E ATIVA A BUSCA */
+.busca input[type="search"]:focus 
+{ 
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 100%;
+    z-index: 1;
+    transition: width 1s ease-in;
+    background-color: white;
+}
+ /* CSS DO ICON DA LUPA */
+.fas
+{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+/* ICON DA LUPA */
+.fa-search
+{
+    color: #ffffff;
+    font-size: 20px;   
+    z-index: 2;       
+}
+
+.container
+{
+    user-select: none;
+    margin: 100px auto;
+    background: #0984e3;
+    border-radius: 5px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
+}
+/* CSS DA PARTE DE CIMA DA CAIXA DO PERFIL */
+.cover-photo
+{
+    background: url(/Projeto\ do\ Naldo/imagens/cover.jpg);
+    height: 160px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+/* CSS DA FOTO DO PERFIL OU A BORDA DELA */
+.profile
+{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 93px 0 0 -175px;
+    border: 1px solid #0984e3;
+    padding: 7px;
+    background: #0984e3;
+}
+/* CSS DO NOME DO PERFIL */
+.profile-name
+{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px 0 0 120px;
+    color: black;
+    
+}
+/* CSS DO CAMPO DE TEXTO DO USER OU BIO */
+.about
+{
+    margin-top: 35px;
+    line-height: 21px;
+    color: black;
+    
+}
+
+button
+{
+    margin: 30px 0 50px 0;
+    width: 150px;
+}
+/* CSS DO BTN INFO */
+.msg-btn, .follow-btn
+{
+    background: #03bfbc;
+    border: 1px solid #03bfbc;
+    padding: 10px 25px;
+    color: #1a1a1a;
+    border-radius: 2px;
+    font-family: Montserrat, sans-serif;
+    cursor: pointer;
+}
+/* CSS DO BOTÃO PUBS */
+.follow-btn
+{
+    margin-left: 20px;
+    background: transparent;
+    color: white;
+}
+
+/* CSS DO BTN PUBS  QUANDO PASSA O MOUSE POR CIMA*/
+.follow-btn:hover
+{
+    color: white;
+    background: #1a1a1a;
+    transition: .5s;
+}
+.container .fab
+{
+    padding-left: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .5s;
+    color: white;
+}
+
+
+/* CSS DA LINHA CENTRAL ABAIXO DO NOME DO USER */
+#linha
+{
+    background-color: #ffffff;
+    position: relative;
+    width: 230px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 25px;
+}
+.edits-perfil button
+{
+    border: none;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    background: none;
+    outline: none;
+}
+/* CSS DE QUANDO PASSO O MOUSE POR CIMA DO ICONS DO PERFIL */
+.edits-perfil button:hover
+{
+    cursor: pointer;
+    
+}
+.fa-facebook-f:hover
+{
+    color: #3b5999;
+    font-size: 25px;
+    transition: 0.4s;
+}
+
+.fa-instagram:hover
+{
+    color: #e4405f;
+    font-size: 25px;
+    transition: 0.4s;
+}
+
+.fa-whatsapp:hover
+{
+    color: #25D366;
+    font-size: 25px;
+    transition: 0.4s;
+}
+
+.fa-pen:hover
+{
+    transform: translate(0,-10px);
+    transition: 0.4s;
+}
+
+.fa-camera:hover
+{
+    transform: translate(0,-10px);
+    transition: 0.4s;
+}
+/* CSS DE POSIÇÃO E ESTILO DOS BTNS CAMERA E LAPIS */
+.lapis 
+{
+    position: absolute;
+    left: 61%;
+    top: 49.8%;
+}
+
+.camera
+{
+    position: absolute;
+    top: 40%;
+    left: 46.8%;
+
+}
+
+.fa-camera
+{
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.fa-pen
+{
+    font-size: 13px;
+    color: #ffffff;
+}
+
+

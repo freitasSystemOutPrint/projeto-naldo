@@ -1,0 +1,300 @@
+body 
+{       
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+     
+/*FORMATAÇÃO DA BARRA PRINCIPAL*/
+.barra-primaria
+{
+    width: 100%;
+    height: 80px;
+    background-color: #1a1a1a; 
+    position: absolute;
+    top: 0px; 
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.barra-primaria ol
+{
+    position: relative;
+    list-style: none;
+    /* margin-left: 495px; */
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 400px;
+}
+
+.barra-primaria ol li 
+{
+    float: left;
+    width: 110px;
+    box-sizing: border-box;
+    margin-left:5px ;
+    padding: 30px;
+
+}
+
+.barra-primaria #opt a 
+{
+    color: #0984e3;
+    text-align: center;
+    text-transform:uppercase;  
+    display: block;
+}
+
+.barra-primaria #opt a:hover 
+{
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+/* FIM DO CSS DOS NOMES DA BARRA PRINCIPAL */
+
+/* CSS DA LOGO DA FADESA COMMUNITY DA BARRA PRINCIPAL (IMAGEM PEQUENA) */
+#fds-community 
+{
+    position: absolute;
+    height: 60px;
+    width: 200px;
+    top:10px;
+    left: 2%;
+}
+
+/* FORMATAÇÂO DO CARROSEL DE CURSOS */
+.carousel
+{   
+    position: relative;
+    top: -2px;
+    height:200px;
+    perspective: 1000px;
+    background-color: #1a1a1a;
+}
+
+.carousel .carousel-item
+{   
+    
+    display: block;
+    width:132px;
+    margin-top: 30px;
+}
+
+/* CSS DAS REDES SOCIAS DA BARRA PRINCIPAL */
+
+.socialmenu ul  
+{
+    position: absolute;
+    top:45%;
+    left:89%;
+    padding:0;
+    margin:0;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.socialmenu ul li
+{
+    list-style: none;
+    margin: 0 4px;
+}
+
+.socialmenu ul li .fa
+{
+    font-size: 25px;
+    line-height: 39px;
+    transition: .6s;
+    color: white; 
+}
+
+.socialmenu ul li .fa:hover
+{
+    color: #fff;
+}
+
+.socialmenu ul li a 
+{
+    position: relative;
+    display: block;
+    width:38px;
+    height:38px;
+    background-color: #1E90FF;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+ 
+.socialmenu ul li a:hover
+{
+    transform: translate(0, -10px);
+}
+
+.socialmenu ul li:nth-child(1) a:hover
+{
+    background-color: #3b5999;
+}
+.socialmenu ul li:nth-child(2) a:hover
+{
+    background-color: #e4405f;
+}
+.socialmenu ul li:nth-child(3) a:hover
+{
+    background-color: #25D366;
+}
+/* FIM DO CSS DOS MENUS DA BARRA PRINCIPAL */
+
+/* CSS da DIV BUSCA e Do ESTILO  DA LUPA */
+.busca 
+{
+    position: absolute;
+    top: 39%;
+    left: 64%;
+    height: 50px;
+    width:250px;
+}
+/* CSS DO CAMPO DE BUSCA */
+ .busca input[type="search"]
+{
+    height: 30px;
+    border: none;
+    outline: none;
+    padding-left: 50px;
+    width: 0px;
+    position: absolute;
+    top: -8px;
+    left: 0px;
+    z-index: 3;
+    background: none;
+    transition: width 1s ease-in-out;
+    cursor: pointer;
+}
+/* CSS QUANDO CLICA NO ICON DA LUPA E ATIVA A BUSCA */
+.busca input[type="search"]:focus 
+{ 
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 100%;
+    z-index: 1;
+    transition: width 1s ease-in;
+    background-color: white;
+}
+ /* CSS DO ICON DA LUPA */
+.fas
+{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+/* ICON DA LUPA */
+.fa-search
+{
+    color: #ffffff;
+    font-size: 20px;   
+    z-index: 2;       
+}
+
+
+/*propaganda*/
+slider 
+{
+    display: block;
+    width: 50%;
+    height: 50%;
+    top: 110%;
+    overflow: hidden;
+    position: absolute;
+    left: 25%;
+}
+
+slider > * {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 50%;
+    background: #1f1f1f;
+    animation: slide 12s infinite;
+    overflow: hidden;
+}
+
+slide:nth-child(1)
+{
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(https://i.pinimg.com/originals/ac/36/21/ac3621a2356d9773f3015c9523c91f3f.png);
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(2)
+{
+    animation-delay: 2s;
+    background-image: url(https://br.web.img3.acsta.net/newsv7/20/03/16/19/47/0306257.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(3)
+{
+    animation-delay: 5s;
+    background-image: url(https://i1.wp.com/cloud.estacaonerd.com/wp-content/uploads/2020/05/27091936/15112131302144.jpg.png?fit=2560%2C1440&ssl=1);
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(4)
+{
+    left: 0%;
+    animation-delay: 8s;
+    background-image: url(https://jogandocasualmente.com.br/wp-content/uploads/2020/01/xbox-one-logo-1000x563.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes slide
+{
+   0% { left: 100%; width: 100%;}
+   5% { left: 0%;}
+   25% { left: 0%;}
+   30% { left: -100%; width: 100%;}
+   30.0001% {left: -100%; width: 0%;}
+   100% { left: 100%; width: 0%;}
+}
+
+#titulo{
+background-color: rgb(58, 140, 223);
+color: white;
+margin-top:-7%;
+height: 450px;
+font-size: 12px;
+padding-left: 100px;
+padding-top:2px;
+}
+
+#parágrafo{
+color: black;
+font-size: 18px;
+background-color:rgba(60, 124, 196, 0.856);
+width: 400px;
+margin-top:6%;
+border-radius: 40px 0px 40px 0px;
+margin-left:2%;
+position: relative;
+top:10%;    
+}
+h2 {
+color:white;
+margin-top: 2%;
+margin-left: 4%;
+
+}
+p{
+margin-left: 4%;
+
+}
+
+#boxenorme
+{
+background-color: #1a1a1a;
+height: 1100px;
+
+}

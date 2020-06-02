@@ -1,0 +1,83 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <title>Perfil</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Link do Icon da barra do navegador -->
+      <link rel="shortcut icon" href="Imagens/fadesaicon.gif" type="image/x-icon" />
+      <!-- Link da FONTE PRINCIPAL do SITE By GOOGLE FONTS -->
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+     <!-- Link do Site dos icons + script dos icons para poder funcionar  corretamente-->
+      <script src="https://kit.fontawesome.com/79dfdaaf5e.js" crossorigin="anonymous"></script>
+      <!-- Link do CSS da Pagina -->
+      <link rel="stylesheet" href="CSS/Crossbrowser.css">
+      <link rel="stylesheet" href="CSS/TL-Cadastro.css">
+  </head>
+  <body>
+      <header class="barra-primaria">
+          <!-- Imagem da barra principal Fadesa Community pequena -->
+              <img src="Imagens/fds-community.png" id="fds-community">
+              <!-- Itens da lista da barra principal -->
+              <ol>
+                  <li id="opt"><a href="#" id="opt">inicio</a></li>
+                  <li id="opt"><a href="#" id="opt">login</a></li>
+                  <li id="opt"><a href="#" id="opt">eventos</a></li>
+              </ol>
+              <!-- HTML das redes socias da barra principal -->
+              <div class="socialmenu">
+                  <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                  </ul>
+              </div>
+              <!-- HTML da barra de Busca + a Lupa -->
+              <div class="busca">
+                  <input type="search">
+                  <i class="fas fa-search"></i>
+              </div>      
+      </header>
+      <!-- Fim da barra principal -->
+
+
+
+
+      <form action="cad.php" method="POST">  
+        NOME:  <input type="text" name="nome"> <br>
+        SOBRE: <input type="text" name="sobr"> <br>
+        DATA:  <input type="date" name="data"> <br>
+
+      
+        Qual comunidade irá participar?        <br>
+
+        
+
+    <select name="comu">
+      <option value="0" name="comu">Selecione Seu Curso</option>
+      <option value="1" name="comu">Administração</i></option>
+      <option value="2" name="comu">Análise e Desenvolvimento de Sistemas</option>
+      <option value="3" name="comu">Ciências Contábeis</option>
+      <option value="4" name="comu">Direito</option>
+      <option value="5" name="comu">Educação Física</option>
+      <option value="6" name="comu">Enfermagem</option>
+      <option value="7" name="comu">Nutrição</option>
+      <option value="8" name="comu">Pedagogia</option>
+      <option value="9" name="comu">Psicologia</option> 
+    </select>
+  </div>
+
+    <br> TURNO <br>
+      M <input type="radio" name="turn">
+      T <input type="radio" name="turn">
+      N <input type="radio" name="turn">
+                                                 <br>
+      EMAIL: <input type="email"    name="emai"> <br>
+      SENHA: <input type="password" name="pass"> <br>
+
+    <input type="submit" value="FINALIZAR CADASTRO">
+
+      </form>
+  </body>
+  </html>
+  
